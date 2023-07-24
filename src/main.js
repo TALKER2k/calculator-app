@@ -1,4 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import Vue from 'vue'
+import CalculatorApp from './components/CalculatorApp.vue'
 
-createApp(App).mount('#app')
+new Vue({
+  render: (h) => h(CalculatorApp),
+}).$mount('#app')
